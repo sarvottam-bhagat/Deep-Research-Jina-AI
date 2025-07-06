@@ -2,105 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Avengers Movie Style Theme */
 
 @layer base {
   :root {
-    /* Cyberpunk/futuristic color palette */
-    --background: 220 13% 8%;
-    --foreground: 190 90% 90%;
+    /* Avengers color palette - Dark and heroic */
+    --background: 220 20% 5%;
+    --foreground: 0 0% 95%;
 
-    --card: 220 13% 12%;
-    --card-foreground: 190 90% 90%;
+    --card: 220 20% 8%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 13% 12%;
-    --popover-foreground: 190 90% 90%;
+    --popover: 220 20% 8%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Neon cyan primary */
-    --primary: 190 90% 50%;
-    --primary-foreground: 220 13% 8%;
-    --primary-hover: 190 90% 60%;
+    /* Marvel Red primary */
+    --primary: 0 85% 60%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 0 85% 70%;
 
     /* Dark secondary */
-    --secondary: 220 13% 16%;
-    --secondary-foreground: 190 90% 90%;
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 220 13% 16%;
-    --muted-foreground: 190 30% 60%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 0 0% 60%;
 
-    /* Orange accent */
-    --accent: 25 90% 60%;
-    --accent-foreground: 220 13% 8%;
+    /* Gold accent */
+    --accent: 45 100% 55%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 20%;
-    --input: 220 13% 16%;
-    --ring: 190 90% 50%;
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 0 85% 60%;
 
-    /* Cyberpunk-specific tokens */
-    --cyber-blue: 190 90% 50%;
-    --cyber-blue-light: 190 90% 70%;
-    --cyber-orange: 25 90% 60%;
-    --cyber-dark: 220 13% 8%;
-    --cyber-card: 220 13% 12%;
-    --content-background: 220 13% 10%;
-    --reading-text: 190 90% 85%;
+    /* Avengers-specific tokens */
+    --avengers-red: 0 85% 60%;
+    --avengers-gold: 45 100% 55%;
+    --avengers-blue: 220 100% 60%;
+    --avengers-dark: 220 20% 5%;
+    --avengers-card: 220 20% 8%;
+    --content-background: 220 20% 10%;
+    --reading-text: 0 0% 90%;
     
     /* Gradients */
-    --gradient-cyber: linear-gradient(135deg, hsl(190 90% 50%), hsl(25 90% 60%));
-    --gradient-dark: linear-gradient(180deg, hsl(220 13% 12%), hsl(220 13% 8%));
+    --gradient-avengers: linear-gradient(135deg, hsl(0 85% 60%), hsl(45 100% 55%));
+    --gradient-dark: linear-gradient(180deg, hsl(220 20% 8%), hsl(220 20% 5%));
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --background: 220 20% 5%;
+    --foreground: 0 0% 95%;
+    --card: 220 20% 8%;
+    --card-foreground: 0 0% 95%;
+    --popover: 220 20% 8%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 0 85% 60%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 45 100% 55%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 0 85% 60%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -119,11 +102,13 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    background-image: url('./assets/cyber-bg.jpg');
+    background-image: url('../Images/download (12).jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
   
   body::before {
@@ -133,7 +118,115 @@ All colors MUST be HSL.
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, hsl(220 13% 8% / 0.9), hsl(220 13% 12% / 0.8));
+    background: linear-gradient(135deg, hsl(220 20% 5% / 0.7), hsl(220 20% 8% / 0.8));
     z-index: -1;
   }
+}
+
+/* Avengers Characters Moving Animation */
+@keyframes moveCharacters {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.avengers-characters {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 370px;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.character-container {
+  position: absolute;
+  bottom: 0;
+  height: 350px;
+  animation: moveCharacters 20s linear infinite;
+}
+
+.character-container img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 30px rgba(255, 193, 7, 0.8));
+}
+
+/* Perfect continuous loop - when last character exits, first character enters */
+.character-container:nth-child(1) { animation-delay: 0s; }
+.character-container:nth-child(2) { animation-delay: -2s; }
+.character-container:nth-child(3) { animation-delay: -4s; }
+.character-container:nth-child(4) { animation-delay: -6s; }
+.character-container:nth-child(5) { animation-delay: -8s; }
+.character-container:nth-child(6) { animation-delay: -10s; }
+.character-container:nth-child(7) { animation-delay: -12s; }
+.character-container:nth-child(8) { animation-delay: -14s; }
+.character-container:nth-child(9) { animation-delay: -16s; }
+.character-container:nth-child(10) { animation-delay: -18s; }
+
+/* Avengers-style button styling */
+.avengers-button {
+  background: linear-gradient(135deg, hsl(0 85% 60%), hsl(45 100% 55%));
+  border: 2px solid hsl(45 100% 55%);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
+}
+
+.avengers-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 25px rgba(255, 193, 7, 0.5);
+  background: linear-gradient(135deg, hsl(0 85% 70%), hsl(45 100% 65%));
+}
+
+/* Avengers-style card styling */
+.avengers-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid hsl(45 100% 55%);
+  box-shadow: 0 0 30px rgba(255, 193, 7, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.avengers-card:hover {
+  box-shadow: 0 0 40px rgba(255, 193, 7, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Avengers-style header */
+.avengers-header {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(139, 0, 0, 0.8));
+  border-bottom: 3px solid hsl(45 100% 55%);
+  backdrop-filter: blur(15px);
+}
+
+/* Marvel-style text glow effect */
+.avengers-title {
+  text-shadow: 0 0 20px rgba(255, 193, 7, 0.6);
+  color: hsl(45 100% 55%);
+}
+
+.avengers-subtitle {
+  color: hsl(0 85% 60%);
+  text-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
+}
+
+/* Ensure main content appears above moving characters */
+main {
+  position: relative;
+  z-index: 10;
+}
+
+/* Ensure cards appear above moving characters */
+.avengers-card {
+  position: relative;
+  z-index: 15;
 }

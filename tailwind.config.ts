@@ -53,12 +53,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				cyber: {
-					blue: 'hsl(var(--cyber-blue))',
-					'blue-light': 'hsl(var(--cyber-blue-light))',
-					orange: 'hsl(var(--cyber-orange))',
-					dark: 'hsl(var(--cyber-dark))',
-					card: 'hsl(var(--cyber-card))'
+				avengers: {
+					red: 'hsl(var(--avengers-red))',
+					gold: 'hsl(var(--avengers-gold))',
+					blue: 'hsl(var(--avengers-blue))',
+					dark: 'hsl(var(--avengers-dark))',
+					card: 'hsl(var(--avengers-card))'
 				},
 				content: {
 					background: 'hsl(var(--content-background))'

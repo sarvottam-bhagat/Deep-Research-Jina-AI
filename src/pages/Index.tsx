@@ -253,17 +253,17 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-40">
+      <header className="avengers-header sticky top-0 z-40">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2">
-              <BookOpen className="h-6 w-6 text-cyber-blue" />
-              <Sparkles className="h-4 w-4 text-cyber-orange" />
+              <BookOpen className="h-6 w-6 text-avengers-gold" />
+              <Sparkles className="h-4 w-4 text-avengers-red" />
             </div>
-            <h1 className="text-xl font-bold text-cyber-blue">
-              Cyber Research RAG
+            <h1 className="text-xl font-bold avengers-title">
+              DEEP RESEARCH 
             </h1>
-            <span className="text-sm text-muted-foreground hidden sm:inline">
+            <span className="text-sm avengers-subtitle hidden sm:inline">
               AI-powered research assistant
             </span>
           </div>
@@ -275,11 +275,11 @@ const Index = () => {
         {/* Search Section */}
         <div className="mb-12">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-cyber-blue mb-3">
-              Discover The Future
+            <h2 className="text-3xl font-bold avengers-title mb-3">
+              ASSEMBLE YOUR RESEARCH LIKE THE AVENGERS
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Enter keywords or topics to discover relevant sources and dive deep into comprehensive content analysis.
+              Enter keywords or topics to discover relevant sources and dive deep into comprehensive content analysis. The power of knowledge awaits.
             </p>
           </div>
           
@@ -289,22 +289,22 @@ const Index = () => {
         {/* Comprehensive Analysis Section */}
         {fetchedContents.length > 0 && (
           <div className="mb-8">
-            <Card className="border-2 border-cyber-orange/20 bg-gradient-to-r from-cyber-blue/5 to-cyber-orange/5">
+            <Card className="avengers-card border-2 border-avengers-gold/20 bg-gradient-to-r from-avengers-red/5 to-avengers-gold/5">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-cyber-blue">
+                <CardTitle className="flex items-center gap-2 avengers-title">
                   <Brain className="h-5 w-5" />
-                  Comprehensive Analysis
-                  <Badge variant="secondary" className="ml-2">
+                  COMPREHENSIVE ANALYSIS
+                  <Badge variant="secondary" className="ml-2 bg-avengers-gold text-black">
                     {fetchedContents.length} Sources Ready
                   </Badge>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 {analysisResult && (
-                  <div className="p-4 bg-cyber-blue/5 rounded-lg border border-cyber-blue/20 mb-4">
+                  <div className="p-4 bg-avengers-gold/5 rounded-lg border border-avengers-gold/20 mb-4">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-sm font-medium text-cyber-blue">Latest Analysis Available</p>
+                        <p className="text-sm font-medium text-avengers-gold">Latest Analysis Available</p>
                         <p className="text-xs text-muted-foreground">
                           Generated from {analysisResult.sources.length} sources • {new Date().toLocaleDateString()}
                         </p>
@@ -313,7 +313,7 @@ const Index = () => {
                         variant="outline"
                         size="sm"
                         onClick={() => setShowAnalysisModal(true)}
-                        className="border-cyber-blue text-cyber-blue hover:bg-cyber-blue/10"
+                        className="border-avengers-gold text-avengers-gold hover:bg-avengers-gold/10"
                       >
                         <FileText className="mr-2 h-3 w-3" />
                         View Analysis
@@ -339,7 +339,7 @@ const Index = () => {
                   <Button
                     onClick={handleComprehensiveAnalysis}
                     disabled={isAnalyzing}
-                    className="bg-cyber-blue hover:bg-primary-hover"
+                    className="avengers-button"
                   >
                     {isAnalyzing ? (
                       <>
@@ -358,7 +358,7 @@ const Index = () => {
                     <Button
                       variant="outline"
                       onClick={() => setShowAnalysisModal(true)}
-                      className="border-cyber-blue text-cyber-blue hover:bg-cyber-blue/10"
+                      className="border-avengers-gold text-avengers-gold hover:bg-avengers-gold/10"
                     >
                       <FileText className="mr-2 h-4 w-4" />
                       View Last Analysis
@@ -369,6 +369,7 @@ const Index = () => {
                     <Button
                       variant="outline"
                       onClick={() => setShowApiKeyInput(true)}
+                      className="border-avengers-red text-avengers-red hover:bg-avengers-red/10"
                     >
                       <Settings className="mr-2 h-4 w-4" />
                       Setup API Key
@@ -417,7 +418,7 @@ const Index = () => {
                     <Button
                       onClick={handleFetchAllAndAnalyze}
                       disabled={isAnalyzing}
-                      className="bg-cyber-blue hover:bg-primary-hover"
+                      className="avengers-button"
                     >
                       {isAnalyzing ? (
                         <>
@@ -450,20 +451,54 @@ const Index = () => {
             <div className="max-w-md mx-auto space-y-4">
               <div className="flex justify-center">
                 <div className="relative">
-                  <BookOpen className="h-16 w-16 text-cyber-blue/20" />
-                  <Sparkles className="absolute -top-2 -right-2 h-6 w-6 text-cyber-orange" />
+                  <BookOpen className="h-16 w-16 text-avengers-gold/30" />
+                  <Sparkles className="absolute -top-2 -right-2 h-6 w-6 text-avengers-red" />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-foreground">
-                Start Your Research Journey
+              <h3 className="text-xl font-semibold avengers-title">
+                START YOUR HEROIC RESEARCH
               </h3>
               <p className="text-muted-foreground">
-                Use the search bar above to explore topics like "machine learning", "climate change", or any subject you're curious about.
+                Use the search bar above to explore topics like "machine learning", "climate change", or any subject you're curious about. The power of knowledge awaits.
               </p>
             </div>
           </div>
         )}
       </main>
+
+      {/* Avengers Characters Moving Animation */}
+      <div className="avengers-characters">
+        <div className="character-container">
+          <img src="/Images/Spider Man.jpeg" alt="Spider-Man" />
+        </div>
+        <div className="character-container">
+          <img src="/Images/Black Panther.jpeg" alt="Black Panther" />
+        </div>
+        <div className="character-container">
+          <img src="/Images/Hulk (1).jpeg" alt="Hulk" />
+        </div>
+        <div className="character-container">
+          <img src="/Images/Groot.jpeg" alt="Groot" />
+        </div>
+        <div className="character-container">
+          <img src="/Images/Loki 🐸.jpeg" alt="Loki" />
+        </div>
+        <div className="character-container">
+          <img src="/Images/Rocket Guardians Of The Galaxy.jpeg" alt="Rocket" />
+        </div>
+        <div className="character-container">
+          <img src="/Images/download (11).jpeg" alt="Avenger" />
+        </div>
+        <div className="character-container">
+          <img src="/Images/download (13).jpeg" alt="Avenger" />
+        </div>
+        <div className="character-container">
+          <img src="/Images/download (14).jpeg" alt="Avenger" />
+        </div>
+        <div className="character-container">
+          <img src="/Images/download (15).jpeg" alt="Avenger" />
+        </div>
+      </div>
 
       {/* Content Viewer Modal */}
       <ContentViewer

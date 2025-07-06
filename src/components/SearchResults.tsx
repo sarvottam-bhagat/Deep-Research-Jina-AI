@@ -29,18 +29,18 @@ export function SearchResults({ results, onReadContent, isLoadingContent, loadin
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-semibold text-foreground">
-          Search Results ({results.length})
+        <h2 className="text-xl font-semibold avengers-title">
+          SEARCH RESULTS ({results.length})
         </h2>
       </div>
       
       <div className="grid gap-4">
         {results.map((result, index) => (
-          <Card key={index} className="hover:shadow-md transition-shadow border-l-4 border-l-research-accent">
+          <Card key={index} className="avengers-card hover:shadow-md transition-shadow border-l-4 border-l-avengers-gold">
             <CardHeader className="pb-3">
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1 min-w-0">
-                  <CardTitle className="text-lg leading-tight mb-2 text-research-blue">
+                  <CardTitle className="text-lg leading-tight mb-2 text-avengers-gold">
                     {result.title}
                   </CardTitle>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
@@ -55,7 +55,7 @@ export function SearchResults({ results, onReadContent, isLoadingContent, loadin
                     )}
                   </div>
                 </div>
-                <Badge variant="secondary" className="shrink-0">
+                <Badge variant="secondary" className="shrink-0 bg-avengers-gold text-black">
                   #{index + 1}
                 </Badge>
               </div>
@@ -70,7 +70,7 @@ export function SearchResults({ results, onReadContent, isLoadingContent, loadin
                   size="sm"
                   onClick={() => onReadContent(result.url, result.title)}
                   disabled={isLoadingContent}
-                  className="flex-1 sm:flex-none"
+                  className="flex-1 sm:flex-none border-avengers-gold text-avengers-gold hover:bg-avengers-gold/10"
                 >
                   {isLoadingContent && loadingUrl === result.url ? (
                     <>
@@ -88,6 +88,7 @@ export function SearchResults({ results, onReadContent, isLoadingContent, loadin
                   variant="ghost"
                   size="sm"
                   onClick={() => window.open(result.url, '_blank')}
+                  className="text-avengers-red hover:bg-avengers-red/10"
                 >
                   <ExternalLink className="mr-2 h-3 w-3" />
                   Open
