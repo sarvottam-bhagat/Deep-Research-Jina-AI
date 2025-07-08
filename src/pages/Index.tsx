@@ -469,34 +469,34 @@ const Index = () => {
       {/* Avengers Characters Moving Animation */}
       <div className="avengers-characters">
         <div className="character-container">
-          <img src="/Images/Spider Man.jpeg" alt="Spider-Man" />
+          <img src="/Spider Man.jpeg" alt="Spider-Man" />
         </div>
         <div className="character-container">
-          <img src="/Images/Black Panther.jpeg" alt="Black Panther" />
+          <img src="/Black Panther.jpeg" alt="Black Panther" />
         </div>
         <div className="character-container">
-          <img src="/Images/Hulk (1).jpeg" alt="Hulk" />
+          <img src="/Hulk (1).jpeg" alt="Hulk" />
         </div>
         <div className="character-container">
-          <img src="/Images/Groot.jpeg" alt="Groot" />
+          <img src="/Groot.jpeg" alt="Groot" />
         </div>
         <div className="character-container">
-          <img src="/Images/Loki 🐸.jpeg" alt="Loki" />
+          <img src="/Loki 🐸.jpeg" alt="Loki" />
         </div>
         <div className="character-container">
-          <img src="/Images/Rocket Guardians Of The Galaxy.jpeg" alt="Rocket" />
+          <img src="/Rocket Guardians Of The Galaxy.jpeg" alt="Rocket" />
         </div>
         <div className="character-container">
-          <img src="/Images/download (11).jpeg" alt="Avenger" />
+          <img src="/download (11).jpeg" alt="Avenger" />
         </div>
         <div className="character-container">
-          <img src="/Images/download (13).jpeg" alt="Avenger" />
+          <img src="/download (13).jpeg" alt="Avenger" />
         </div>
         <div className="character-container">
-          <img src="/Images/download (14).jpeg" alt="Avenger" />
+          <img src="/download (14).jpeg" alt="Avenger" />
         </div>
         <div className="character-container">
-          <img src="/Images/download (15).jpeg" alt="Avenger" />
+          <img src="/download (15).jpeg" alt="Avenger" />
         </div>
       </div>
 
